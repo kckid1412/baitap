@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký thành viên</title>
+    <link rel="StyleSheet" href="style.css">
+</head>
+<body>
+    <form method="GET" name="frml"oninput ="x.value =parseInt(RangeFollowers.value)" onload='x.value=0'> 
+        <table style="width:100%" ; cellspacing="0" align="center">
+            <caption>Đăng ký thành viên </caption>    
+            <tr>
+                <th align='right'>Họ và Tên</th>
+                <td> <input type=text name='TxtFullName'></td>
+            </tr>
+            <tr>
+                <th align='right'>Username</th>
+                <td><input type=text name='TxtUserName'></td>
+            </tr >
+            <tr>
+                <th align='right'> Password</th>
+                <td><input type=password name="TxtPwd"></td> 
+            </tr>
+            <tr>
+                <th align="right">Giới tính </th>
+                <td><input type= radio name="RdGender" value='Female' >Nữ<br>
+                <input type= radio name="RdGender" value='Male'>Nam<br>
+                <input type= radio name="RdGender" value='Gay'> Đồng tính Nam<br>
+                <input type= radio name="RdGender" value='Lesbian'>Đồng tính Nữ<br>
+                </td> 
+            </tr>
+            <tr>
+                <th align="right">Đội bóng ưa thích</th>
+                <td><input type= 'checkbox' name='CHkHobbies' value='Manchester United' >Manchester United<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Chelsea' >Chelsea<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Liverpool' >Liverpool<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Arsenal'>Arsenal<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Manchester City' >Manchester City<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Real Madrid'>Real Madrid<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Barcelona'>Barcelona<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Juventus'>Juventus<br>
+                <input type= 'checkbox' name='CHkHobbies' value='PSG'>Paris Saint Germain<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Bayern Munich'>Bayern Munich<br>
+                <input type= 'checkbox' name='CHkHobbies' value='Khác'>Khác<br>
+                <tr>
+                    <th align = right></th>
+                    <td><textarea name="TxtDesc"></textarea></td>
+                </tr>
+                </td> 
+            </tr>
+            <tr>
+                <th align="right"> Quê quán </th>
+                <td><select name="Slt hometown">
+                    <option value="HNI">Hà Nội<br>
+                    <option value="HCMC">Hồ Chí Minh<br>
+                    <option value="DNA">Đà Nẵng<br>
+                    <option value="HUE">Huế<br>
+                    <option value="Khác">Khác<br>
+                        <th align = right>Khác</th>
+                        <td><input type="text">
+                </select>
+                </td> 
+            </tr>
+            <tr>
+                <th align = right>Mô tả về bản thân</th>
+                <td><textarea name="TxtDesc"></textarea></td>
+            </tr>
+            <tr >
+                <th align= 'right'>Dự đoán số người đăng ký </th>
+                <td align= 'leftleft'><input type= number name="TxtFollowers"min =0 max=10000 step=1> người</td>
+            </tr>
+            <tr >
+                <th align= 'right'><input type="submit" value="Gửi"></th>
+                <td><input type= reset value='Nhập lại'></td>
+            </tr>
+        </table>
+    </form
+</body>
+</html>
